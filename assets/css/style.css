@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
+@keyframes degrade-animado{
+    0% {
+        background-position-x: 0%;
+    }
+    50%{
+        background-position-x: 50%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Serif Text", serif;
+    color: white;
+}
+
+body{
+    background: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: degrade-animado 15s infinite alternate;
+}
+
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+    width: 700px;
+    background: transparent;
+}
+
+.relogio div{
+    height: 300px;
+    width: 330px;
+    display: flex;
+    background-color: #101010;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 120px;
+    letter-spacing: 3px;
+}
+
+.relogio span.tempo{
+    font-size: 15px;
+}
+
+nav{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.6s ease;
+    background: transparent;
+}
+
+button{
+    border: 5px solid transparent;
+    padding: 0.5rem;
+    background: transparent;
+    transition: transform 0.5s ease;
+}
+
+button:hover{
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+.abrirMenu div{
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
+}
+
+.menu{
+    list-style: none;
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    gap: 7px; 
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(18, 17, 17, 0.8);
+    border: 5px dotted rgba(18, 17, 17, 0.8);
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu.ativo{
+    visibility: visible;
+}
+
+@media (max-width: 600px){
+    .relogio{
+        flex-direction: column;
+        width: 500px;
+        height: 530px;
+    }
+    .relogio div{
+        width: 300px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px){
+    .relogio{
+        width: 90%;
+        height: 300px;
+    }
+    .relogio div{
+        width: 47%;
+        height: 300px;
+    }
+}

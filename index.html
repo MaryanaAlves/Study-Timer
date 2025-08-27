@@ -1,0 +1,46 @@
+<!--
+-----------------------------------------------------
+Projeto: Relógio Digital
+Autor: Maryana Alves
+Data de criação: 21/08/2025
+Descrição: Site que exibe um relógio digital atualizado em tempo real
+Versão: 1.0
+Contato: maryalvespro@gmail.com
+Site: https://github.com/MaryanaAlves
+-----------------------------------------------------
+--->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <title>Study Timer - Relógio Online Aesthetic</title>
+</head>
+<body>
+    <div class="relogio" role="timer" aria-live="polite">
+        <div>
+            <span id="horas"></span>
+            <span id="textoHr" class="tempo"></span>
+        </div>
+        <div> 
+            <span id="minutos"></span>
+            <span id="textoMin" class="tempo"></span>
+        </div>
+    </div>
+    <nav class="nav">
+    <button class="abrirMenu" aria-label="Abrir Menu" aria-haspopup="menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div> 
+    </button>
+    <ul class="menu" role="menu">
+        <li><button id="paletaCores"><img src="assets/img/palette_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" width="24" height="24"></button></li>
+        <li><button id="telaCheia"><img src="assets/img/fullscreen.svg" width="24" height="24"></button></li>
+    </ul>
+    </nav>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -165,12 +165,3 @@ function mudarCor(){
 }
 
 botaoCor.addEventListener("click", mudarCor);
-/*
-como colocar descrição no objeto de forma q botar o mouse em cima dele exiba uma mensagem q eu quiser com a descrição
-
-cronometro
-
-pesquisa se da pra botar um aria-label no relogio que fique contando as horas
-
-pesquisar como lançar o site corretamente para o publico
-*/
